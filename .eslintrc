@@ -1,0 +1,23 @@
+{
+   "parser": "babel-eslint",
+   "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+   },
+   "rules": {
+      "linebreak-style": ["error", "windows"],
+      "comma-dangle": ["error", "never"],
+      "eol-last": ["error", "never"],
+      "require-jsdoc": ["error", {
+         "require": {
+             "FunctionDeclaration": false,
+             "MethodDefinition": false,
+             "ClassDeclaration": false,
+             "ArrowFunctionExpression": false,
+             "FunctionExpression": false
+         }
+     }]
+    },
+   "extends": ["eslint:recommended", "google"]
+ }
