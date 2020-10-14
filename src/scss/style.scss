@@ -2,6 +2,13 @@
 @import "vars";
 @import "mixins";
 
-body{
-  background-color: rebeccapurple;
-}
+*,*::after,*::before{ box-sizing: border-box; }
+html{ box-sizing: inherit; overflow-x: hidden; }
+a{ color: inherit; text-decoration: none; outline:none }
+h1,h2,h3,h4,h5{ margin: 0; }
+p{ margin: 0; }
+ul{ list-style:none; margin: 0; padding: 0; }
+textarea,input{border: none; outline: none; border-radius: none;}
+
+@import "modules/main";
+@import "modules/main-page";
