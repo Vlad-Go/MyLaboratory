@@ -1,0 +1,88 @@
+@media (max-width:800px) {
+
+  .title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .info__date {
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .app__dashboard {
+    height: 70vh;
+    grid-template-columns: 35% 30% 30%;
+    // grid-auto-rows: 35px 55px 30px  55px 55px 115px;
+    grid-auto-rows: 10%  14%  9%    14%  14%  30%;
+    column-gap: 2.35%;
+    row-gap: 10px;
+  }
+  .app__container {
+    padding-top: 60px;
+  }
+  .dashboard {
+    &__elem {
+      border-radius: 15px;
+    }
+  }
+
+
+
+  .search {
+    grid-column-start: 2; 
+    grid-column-end: 4; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+  }
+  .ideas {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+  }
+  .two {
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 4; 
+  }
+  .clock {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 4; 
+  }
+  .one {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 6; 
+  }
+  .project {
+    grid-column-start: 2; 
+    grid-column-end: 4; 
+    grid-row-start: 4; 
+    grid-row-end: 5;
+  }
+  .progress {
+    grid-column-start: 2; 
+    grid-column-end: 4; 
+    grid-row-start: 5; 
+    grid-row-end: 6; 
+  }
+
+  .useful {
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 6; 
+    grid-row-end: 7;
+  }
+  .sync {
+    grid-column-start: 3; 
+    grid-column-end: 5; 
+    grid-row-start: 4; 
+    grid-row-end: 5;
+    display: none;
+  }
+  
+}

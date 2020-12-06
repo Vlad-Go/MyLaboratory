@@ -3,12 +3,17 @@
 @import "mixins";
 
 *,*::after,*::before{ box-sizing: border-box; }
-html{ box-sizing: inherit; overflow-x: hidden; }
+html{ box-sizing: inherit; overflow: hidden; }
 a{ color: inherit; text-decoration: none; outline:none }
-h1,h2,h3,h4,h5{ margin: 0; }
+h1,h2,h3,h4,h5{ margin: 0; padding: 0; }
 p{ margin: 0; }
 ul{ list-style:none; margin: 0; padding: 0; }
 textarea,input{border: none; outline: none; border-radius: none;}
+button{border:none; border-radius: none;}
+fieldset{margin: 0;padding: 0;border: none;}
+
 
 @import "modules/main";
-@import "modules/main-page";
+@import "modules/900-main.scss";
+@import "modules/450-main.scss";
+// @import "modules/main-page";
