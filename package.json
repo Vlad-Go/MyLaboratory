@@ -1,7 +1,7 @@
 {
-  "name": "laboratory",
+  "name": "new-project",
   "version": "1.0.0",
-  "description": "My laboratory for better developing",
+  "description": "New project",
   "private": true,
   "main": "webpack.config.js",
   "scripts": {
@@ -9,33 +9,13 @@
     "start": "cross-env NODE_ENV=development   webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vlad-Go/MyLaboratory.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Vlad-Go/MyLaboratory/issues"
-  },
-  "keywords": [
-    "js",
-    "excel"
-  ],
   "author": "I",
   "license": "ISC",
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "last 3 version",
-    "not dead",
-    "iOS >= 9"
-  ],
+
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.11.5",
-    "autoprefixer": "^10.0.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
@@ -51,9 +31,10 @@
     "node-sass": "^4.14.1",
     "postcss": "^8.1.1",
     "postcss-loader": "^4.0.3",
+    "postcss-preset-env": "^6.7.0",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
-    "webpack": "^4.44.2",
+    "webpack": "^5.10.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
