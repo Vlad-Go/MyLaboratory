@@ -12,8 +12,32 @@ textarea,input{border: none; outline: none; border-radius: none;}
 button{border:none; border-radius: none;}
 fieldset{margin: 0;padding: 0;border: none;}
 
-
 @import "modules/main";
-@import "modules/900-main.scss";
+@import "modules/horizontal.scss";
+@import "modules/800-main.scss";
 @import "modules/450-main.scss";
-// @import "modules/main-page";
+// ideas
+@import "modules/ideas/ideas.scss";
+// progress
+@import "modules/progress/progress.scss";
+@import "modules/progress/progress-800.scss";
+@import "modules/progress/progress-450.scss";
+// search
+@import "modules/search/search.scss";
+@import "modules/search/search-800.scss";
+@import "modules/search/search-450.scss";
+// clock
+@import "modules/clock/clock.scss";
+@import "modules/clock/clock-800.scss";
+// project
+@import "modules/project/project.scss";
+@import "modules/project/project-800.scss";
+@import "modules/project/project-450.scss";
+// time-progress
+@import "modules/time-progress/time-progress.scss";
+    // @import "modules/time-progress/time-progress-800.scss";
+    // @import "modules/time-progress/time-progress-450.scss";
+// useful
+@import "modules/useful/useful.scss";
+@import "modules/useful/useful-800.scss";
+  // @import "modules/useful/useful-450.scss";

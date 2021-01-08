@@ -1,0 +1,21 @@
+@media (max-width:800px) {
+  .useful {
+    &__header {
+      &::after{
+        bottom: -5px;
+        font-size: 14px;
+      }
+    }
+    &__box{
+      margin-top: 15px;
+    }
+    &__box-elem {
+      justify-content: start;
+      margin-left: 15px;
+      margin-bottom: 10px;
+        &-title {
+          font-size: 16px;
+        } 
+    } 
+ }
+}

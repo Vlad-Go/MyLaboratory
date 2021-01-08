@@ -1,0 +1,16 @@
+.clock {
+  background-color:  $black;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+.clock-time {
+  color: $light-text;
+  letter-spacing: 0.075em;
+  margin: 0  0 20px 0;
+}

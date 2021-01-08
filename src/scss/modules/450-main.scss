@@ -11,4 +11,14 @@
 .app__dashboard {
     height: 65vh;
 }
+
+.dashboard {
+  &__elem {
+    border-radius: 10px;
+  }
+   &__elem-title{
+      font-size: 17px;
+      line-height: 17px;  
+  }
+}
 }

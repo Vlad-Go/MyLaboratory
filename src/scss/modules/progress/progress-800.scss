@@ -1,0 +1,22 @@
+@media (max-width:800px) {
+  .progress{
+    &-box{
+      height: 86%;
+      width: 55%;
+      border-radius: 15px;
+    }
+  }
+  .box__project-title{
+    margin-top: 2px;
+    font-size: 20px;
+  }
+  .box__project-progress{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 90%;
+    background-color: $main-color;
+    & .progress-line{
+      width: 10%;
+    }
+  }
+}

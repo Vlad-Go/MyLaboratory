@@ -1,5 +1,6 @@
 body{
   background-color: $background-color;
+  position: relative;
   height: 100vh;
 }
 
@@ -16,6 +17,32 @@ body{
   border-radius: 8px;
   background-color: $main-color;
   cursor: pointer;
+}
+.locked{
+  position: relative;
+  &::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($dark-text, .5);
+    background-image: url("../img/locked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+  }
+  
+}
+.progress-bar {
+  height: 7px;
+  border-radius: 30px;
+  & .progress-line{
+    background-color: $green;
+    height: 7px;
+    border-radius: 30px;
+  }
 }
 
 
@@ -57,6 +84,10 @@ body{
     @extend %Roboto-regular;
   }
   &__settings {
+    background-image: url("../img/settings-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
   }
 }
 
@@ -103,7 +134,7 @@ body{
   grid-row-start: 3; 
   grid-row-end: 4; 
 }
-.one {
+.time-progress {
   grid-column-start: 4; 
   grid-column-end: 4; 
   grid-row-start: 2; 
