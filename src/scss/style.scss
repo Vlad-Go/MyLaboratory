@@ -1,3 +1,42 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import "vars";
 @import "mixins";
+
+*,*::after,*::before{ box-sizing: border-box; }
+html{ box-sizing: inherit; overflow: hidden; }
+a{ color: inherit; text-decoration: none; outline:none }
+h1,h2,h3,h4,h5{ margin: 0; padding: 0; }
+p{ margin: 0; }
+ul{ list-style:none; margin: 0; padding: 0; }
+textarea,input{border: none; outline: none; border-radius: none;}
+button{border:none; border-radius: none;}
+fieldset{margin: 0;padding: 0;border: none;}
+
+@import "modules/main";
+@import "modules/horizontal.scss";
+@import "modules/800-main.scss";
+@import "modules/450-main.scss";
+// ideas
+@import "modules/ideas/ideas.scss";
+// progress
+@import "modules/progress/progress.scss";
+@import "modules/progress/progress-800.scss";
+@import "modules/progress/progress-450.scss";
+// search
+@import "modules/search/search.scss";
+@import "modules/search/search-800.scss";
+@import "modules/search/search-450.scss";
+// clock
+@import "modules/clock/clock.scss";
+@import "modules/clock/clock-800.scss";
+// project
+@import "modules/project/project.scss";
+@import "modules/project/project-800.scss";
+@import "modules/project/project-450.scss";
+// time-progress
+@import "modules/time-progress/time-progress.scss";
+// useful
+@import "modules/useful/useful.scss";
+@import "modules/useful/useful-800.scss";
+@import "modules/useful/useful-450.scss";
+

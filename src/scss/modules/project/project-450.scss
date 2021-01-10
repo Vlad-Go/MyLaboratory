@@ -1,0 +1,27 @@
+@media (max-width:450px) {
+  .slider__dot{
+    height: 13px;
+    width: 13px;
+    &+.slider__dot{
+      margin-top: 5px;
+    }
+  }
+  .dots-pannel{
+    left: -20px;
+  }
+  #js{
+    font-size: 30px;
+  }
+  #react{
+    font-size: 18px;
+    img{
+      display: none;
+    };
+  }
+  #layout{
+    font-size: 16px;
+    img{
+      display: none;
+    };
+  }
+}

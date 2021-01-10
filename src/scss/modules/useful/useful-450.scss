@@ -1,0 +1,14 @@
+@media (max-width:450px) {
+  .useful {
+    padding: 5px;
+  
+    &__options-btn {
+      width: 30px;
+      height: 30px;
+    }
+      &__open-btn {
+        width: 30px;
+        height: 30px;
+      }
+  }
+}

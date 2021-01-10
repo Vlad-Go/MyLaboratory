@@ -1,0 +1,82 @@
+.project {
+  background-image: url("../img/project.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 50% ;
+  display: flex;
+  justify-content: space-between;
+}
+.project-title {
+}
+.project-slider {
+  background-color: $red;
+  margin-right: 15px;
+  height: 94%;
+  width: 60px;
+  border-radius: 12px;
+  align-self: center;
+  box-shadow: 0px 1px 10px -4px rgba(0, 0, 0, 0.25);
+}
+.slider-track{
+  height: 100%;
+}
+.dots-pannel{
+  display: flex;
+  flex-direction: column;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider__dot{
+  outline: none;
+  height: 16px;
+  width: 16px;
+  background-color: $black;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  cursor: pointer;
+  &+.slider__dot{
+    margin-top: 10px;
+  }
+}
+.current-dot{
+  background-color: $second-color;
+}
+.slider__item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor:grab;
+    pointer-events: none;
+}
+#js{
+  border-radius: 12px;
+  font-size: 40px;
+  @extend %Roboto-black;
+  background-color: $js-color;
+}
+#react{
+  color: $light-text;
+  font-size: 20px;
+  @extend %Roboto-bold;
+  border-radius: 12px;
+  background-color: $react-color;
+  img{
+    margin-bottom: 5px;
+    width: 90%;
+  };
+}
+#layout{
+  font-size: 18px;
+  @extend %Roboto-bold;
+  border-radius: 12px;
+  background-color: $layout-color;
+  img{
+    margin-top: 10px;
+    width: 90%;
+  };
+}

@@ -1,0 +1,25 @@
+.time-progress {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__block {
+    width: 80%;
+  }
+  &__block-title {
+    margin-left: 5px;
+    font-style: 16px;
+    @extend %Roboto-light
+  }
+  &__bar{
+    background-color: $black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    & .progress-line{
+      width: 40%;
+    }
+  }
+}
+

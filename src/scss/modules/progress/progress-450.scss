@@ -1,0 +1,14 @@
+@media (max-width:450px) {
+  .progress{
+    &-box{
+      height: 86%;
+      width: 50%;
+      border-radius: 10px;
+    }
+  }
+  .box__project-title{
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+}

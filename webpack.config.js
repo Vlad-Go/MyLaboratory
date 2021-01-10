@@ -26,6 +26,15 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'dist/img')
+        }
+      ]
+    }),
     // new CopyPlugin({
     //   patterns: [
     //     {
@@ -63,6 +72,10 @@ module.exports = {
           'sass-loader'
         ]
       },
+      // {
+      //   test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+      //   type: 'asset/resource'
+      // },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource'
@@ -71,6 +84,18 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       }
     ]
   }

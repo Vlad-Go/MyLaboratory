@@ -1,0 +1,40 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  &-title {
+  }
+  &-pannel{
+    width: 70%;
+    height: 80%;
+    position: relative;
+  }
+  &-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 5px 60px 5px 20px;
+    @extend %Roboto-regular;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: $background-color;
+    color: $light-text;
+  }
+  &-button {
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    background-image: url("../img/loupe.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+}
+

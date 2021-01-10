@@ -1,0 +1,160 @@
+body{
+  background-color: $background-color;
+  position: relative;
+  height: 100vh;
+}
+
+
+.title {
+  font-size: 30px;
+  line-height: 35px;
+  color: $light-text;
+  @extend %Roboto-bold;
+}
+.button {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: $main-color;
+  cursor: pointer;
+}
+.locked{
+  position: relative;
+  &::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($dark-text, .5);
+    background-image: url("../img/locked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+  }
+  
+}
+.progress-bar {
+  height: 7px;
+  border-radius: 30px;
+  & .progress-line{
+    background-color: $green;
+    height: 7px;
+    border-radius: 30px;
+  }
+}
+
+
+.app {
+ height: 100%;
+  &__container {
+    max-width: 1140px;
+    margin: 0px auto 20px;
+    padding: 135px 20px 0;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__title {
+    padding-right: 20px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__dashboard {
+    display: grid;
+    // grid-template-columns: 130px 180px 180px 200px 300px;
+    grid-template-columns: 14% 17% 17% 19% 27.5%;
+    grid-auto-rows: 80px 60px 150px 125px;
+    column-gap: 1.35%;
+    row-gap: 15px;
+  }
+}
+.info {
+  &__date {
+    margin-right: 30px;
+    font-size: 20px;
+    line-height: 23px;
+    color: $light-text;
+    @extend %Roboto-regular;
+  }
+  &__settings {
+    background-image: url("../img/settings-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+}
+
+.dashboard {
+  &__elem {
+    background-color: $main-color;
+    border-radius: 20px;
+  }
+  &__elem-title{
+    margin: 10px 5px 10px 20px;
+    font-size: 24px;
+    line-height: 24px;
+    @extend %Roboto-bold;
+    color: $dark-text;
+  }
+}
+.progress {
+  grid-column-start: 1; 
+  grid-column-end: 4; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+.search {
+  grid-column-start: 4; 
+  grid-column-end: 6; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+.ideas {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 3; 
+  grid-row-end: 4; 
+}
+.two {
+  grid-column-start: 2; 
+  grid-column-end: 2; 
+  grid-row-start: 3; 
+  grid-row-end: 4; 
+}
+.clock {
+  grid-column-start: 3; 
+  grid-column-end: 3; 
+  grid-row-start: 3; 
+  grid-row-end: 4; 
+}
+.time-progress {
+  grid-column-start: 4; 
+  grid-column-end: 4; 
+  grid-row-start: 2; 
+  grid-row-end: 4; 
+}
+.project {
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 4; 
+  grid-row-end: 5;
+}
+.sync {
+  grid-column-start: 3; 
+  grid-column-end: 5; 
+  grid-row-start: 4; 
+  grid-row-end: 5;
+}
+.useful {
+  grid-column-start: 5; 
+  grid-column-end: 6; 
+  grid-row-start: 2; 
+  grid-row-end: 5;
+}
