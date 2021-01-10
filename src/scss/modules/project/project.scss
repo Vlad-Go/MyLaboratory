@@ -33,6 +33,9 @@
   width: 16px;
   background-color: $black;
   border-radius: 50%;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
   cursor: pointer;
   &+.slider__dot{
     margin-top: 10px;
