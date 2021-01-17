@@ -1,33 +1,27 @@
-import {Router} from './core/Router/Router';
+import {MainPage} from './pages/MainPage';
+import {getStore} from './core/store/store';
 
 export class App {
-  constructor(components) {
+  constructor(components = [], $root) {
     this.components = components;
-    this.router = new Router;
-    this.pageChangeHandle = this.pageChangeHandle.bind(this);
+    this.$root = $root;
   }
 
   init() {
-    window.addEventListener('hashchange', this.pageChangeHandle);
-    this.pageChangeHandle();
+    this.Page.init();
   }
-
-
-  pageChangeHandle() {
-    this.curentComponents = this.router.route();
-    this.render();
+  destroy() {
+    this.Page.destroy();
   }
   render() {
-    Object.keys(this.curentComponents).forEach((key)=>{
-      new this.curentComponents[key]().templete;
-    });
+    const store = getStore();
+    this.Page = new MainPage(this.components, store);
+    this.$root.innerHTML = this.Page.toHTML();
+    this.init();
   }
-  destroy() {}
 }
 
 //      TODO
 //
-// ## Store provide
 // ## Emiter provide (optional)
-// ## Improve File Structure
 //
